@@ -3,14 +3,14 @@ package algoritmo.ordenacao;
 public class BobleSort {
 	public static void main(String[] args) {
 		int[] array = new int[] { 6, 3, 8, 2, 5, 10, 9, 4 };
-		int auxialiar;
+		int auxiliar;
 
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array.length - 1; j++) {
 				if (array[j] > array[j + 1]) {
-					auxialiar = array[j + 1];
+					auxiliar = array[j + 1];
 					array[j + 1] = array[j];
-					array[j] = auxialiar;
+					array[j] = auxiliar;
 				}
 			}
 		}
